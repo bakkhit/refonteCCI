@@ -23,7 +23,7 @@ export default function Accueil() {
         <Image
           src="/logoCCI/campus.jpg"
           alt="Logo CCI"
-          width={5000}
+          width={1000}
           height={1000}
           className="w-screen h-screen object-cover absolute"
         />
