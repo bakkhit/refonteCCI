@@ -1,0 +1,76 @@
+.img1 {
+  animation: anim1 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.img2 {
+  animation: anim2 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.img3 {
+  animation: anim3 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.img4 {
+  animation: anim4 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.img5 {
+  animation: anim5 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.img6 {
+  animation: anim6 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+.static {
+  animation: staticAnim 2s forwards;
+  animation-delay: 2s;
+  position: absolute;
+}
+
+@keyframes anim1 {
+  0% { opacity: 1; transform: translateY(0) scale(1);}
+  20% { transform: translateY(20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translateY(-200px) scale(1.2);}
+}
+@keyframes anim2 {
+  0% { opacity: 1; transform: translate(0,0) scale(1);}
+  20% { transform: translate(-20px,-20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translate(200px,200px) scale(1.2);}
+}
+@keyframes anim3 {
+  0% { opacity: 1; transform: translateX(0) scale(1);}
+  20% { transform: translateX(20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translateX(-200px) scale(1.2);}
+}
+@keyframes anim4 {
+  0% { opacity: 1; transform: translate(0,0) scale(1);}
+  20% { transform: translate(-20px,-20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translate(200px,200px) scale(1.2);}
+}
+@keyframes anim5 {
+  0% { opacity: 1; transform: translate(0,0) scale(1);}
+  20% { transform: translate(20px,20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translate(-200px,-200px) scale(1.2);}
+}
+@keyframes anim6 {
+  0% { opacity: 1; transform: translateY(0) scale(1);}
+  20% { transform: translateY(20px) scale(1.05);}
+  90% { opacity: 0;}
+  100% {transform: translateY(-200px) scale(1.2);}
+}
+@keyframes staticAnim {
+  0% { opacity: 1;}
+  100% { opacity: 0;}
+}
