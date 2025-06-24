@@ -10,7 +10,7 @@ export default function Accueil() {
     setFade(true);
     setTimeout(() => {
       router.push(path);
-    }, 400); // Durée de l'animation
+    }, 400);
   };
 
   return (

@@ -12,8 +12,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
-      {showLogo ? <LogoAnimation /> : <Accueil />}
+    <div className="relative w-screen h-screen">
+      <Accueil />
+      {showLogo && (
+        <div className="fixed inset-0 z-50 pointer-events-none">
+          <LogoAnimation />
+        </div>
+      )}
     </div>
   );
 }
