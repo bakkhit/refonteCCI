@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <div className='mb-[5vw]'>
+        <div>
             <div className='w-full h-[5vw] bg-white shadow-2xl z-10 relative flex items-center'>
                 <Image
-                    src="/logoCCI/digitalLogo.jpg"
+                    src="/logoCCI/buisnessLogo.jpg"
                     alt="Logo CCI"
                     width={1000}
                     height={1000}
