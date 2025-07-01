@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import EtudiantDigital from './etudiantDigital/etudiant';
 import EmploiTache from './emploiTache/emploiTache';
 import Rendu from './rendu/rendu';
 import Actu from './actualité/actualité';
+import EtudiantBuisness from './etudiantbuisness/etudiant';
 
-export default function VitrineDigital() {
+export default function VitrineBuisness() {
   return (
     <div className='mt-[10vw]'>
       <div className='flex column'>
@@ -31,7 +31,7 @@ export default function VitrineDigital() {
         />
       </div>
       <div className='z-10 relative'>
-        <EtudiantDigital />
+        <EtudiantBuisness />
         <div className='absolute top-[3vw] right-[3vw]'>
           <EmploiTache />
         </div>
