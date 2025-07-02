@@ -1,9 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { supabase } from "../../lib/supabaseClient";
 
-export default function LoginDigital() {
+function LoginDigitalInner() {
   const searchParams = useSearchParams();
   const campus = searchParams.get("campus") || "digital";
   const isDigital = campus === "digital";
@@ -118,5 +118,13 @@ export default function LoginDigital() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function LoginDigital() {
+  return (
+    <Suspense fallback={null}>
+      <LoginDigitalInner />
+    </Suspense>
   );
 }
