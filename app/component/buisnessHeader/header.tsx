@@ -27,7 +27,7 @@ export default function Header() {
                 </div>
             </div>
             <div className='w-[20vw] h-[5vw] bg-white rounded-b-2xl shadow-2xl absolute z-20'>
-                <p className='text-black text-center font-serif-sans font-md text-3xl translate-y-1/2'>Campus Digital</p>
+                <p className='text-black text-center font-serif-sans font-md text-3xl translate-y-1/2'>Campus Buisness</p>
             </div>
         </div>
     );

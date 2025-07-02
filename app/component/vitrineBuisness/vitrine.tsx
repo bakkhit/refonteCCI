@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import EmploiTache from './emploiTache/emploiTache';
+import EmploiTacheB from './emploiTache/emploiTache';
 import Rendu from './rendu/rendu';
 import Actu from './actualité/actualité';
 import EtudiantBuisness from './etudiantbuisness/etudiant';
@@ -33,7 +33,7 @@ export default function VitrineBuisness() {
       <div className='z-10 relative'>
         <EtudiantBuisness />
         <div className='absolute top-[3vw] right-[3vw]'>
-          <EmploiTache />
+          <EmploiTacheB />
         </div>
         <div className='flex ml-[2vw]'>
           <Actu />
