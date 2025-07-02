@@ -38,13 +38,13 @@ export default function Home() {
         />
         <p
           className="absolute top-1/2 left-[20vw] transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold cursor-pointer transition-transform duration-300 hover:scale-120"
-          onClick={() => handleRedirect("/digitalHome")}
+          onClick={() => handleRedirect("/loginDigital?campus=digital")}
         >
           Campus Digital
         </p>
         <p
           className="absolute top-1/2 right-[20vw] transform translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold cursor-pointer transition-transform duration-300 hover:scale-120"
-          onClick={() => handleRedirect("/buisnessHome")}
+          onClick={() => handleRedirect("/loginDigital?campus=buisness")}
         >
           Campus Buisness
         </p>
