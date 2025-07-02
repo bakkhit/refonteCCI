@@ -36,9 +36,9 @@ export default function Accueil() {
         </p>
         <p
           className="absolute top-1/2 right-[20vw] transform translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold cursor-pointer transition-transform duration-300 hover:scale-120"
-          onClick={() => handleRedirect("/loginDigital?campus=buisness")}
+          onClick={() => handleRedirect("/loginDigital?campus=business")}
         >
-          Campus Buisness
+          Campus Business
         </p>
       </div>
     </div>
