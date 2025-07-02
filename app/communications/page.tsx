@@ -27,8 +27,8 @@ export default function Communication() {
         e.preventDefault();
         if (form.campus === "digital") {
             alert("Message envoyé à l'administration du campus Digital!");
-        } else if (form.campus === "buisness") {
-            alert("Message envoyé à l'administration du campus Buisness!");
+        } else if (form.campus === "business") {
+            alert("Message envoyé à l'administration du campus Business!");
         } else {
             alert("Veuillez choisir un campus.");
         }
@@ -49,7 +49,7 @@ export default function Communication() {
                     >
                         <option value="">Sélectionner</option>
                         <option value="digital">Digital</option>
-                        <option value="buisness">Buisness</option>
+                        <option value="business">Business</option>
                     </select>
                 </div>
                 <div className="mb-4">

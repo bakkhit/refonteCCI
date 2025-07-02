@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Header from '../component/buisnessHeader/header'
+import Header from '../component/businessHeader/header'
 import VitrineBuisness from '../component/vitrineBuisness/vitrine';
 import '../globals.css';
 

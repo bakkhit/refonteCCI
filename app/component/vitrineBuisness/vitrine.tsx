@@ -2,7 +2,7 @@ import Image from 'next/image';
 import EmploiTacheB from './emploiTache/emploiTache';
 import Rendu from './rendu/rendu';
 import Actu from './actualité/actualité';
-import EtudiantBuisness from './etudiantbuisness/etudiant';
+import EtudiantBusiness from './etudiantbuisness/etudiant';
 
 export default function VitrineBuisness() {
   return (
@@ -31,7 +31,7 @@ export default function VitrineBuisness() {
         />
       </div>
       <div className='z-10 relative'>
-        <EtudiantBuisness />
+        <EtudiantBusiness />
         <div className='absolute top-[3vw] right-[3vw]'>
           <EmploiTacheB />
         </div>

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import LogoAnimation from "./component/firstLogoAnimation/logoAnimation";
-import Accueil from "./acceuil/page";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -11,7 +10,7 @@ export default function Home() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLogo(false), 3000); // 3 secondes
+    const timer = setTimeout(() => setShowLogo(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -44,9 +43,9 @@ export default function Home() {
         </p>
         <p
           className="absolute top-1/2 right-[20vw] transform translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold cursor-pointer transition-transform duration-300 hover:scale-120"
-          onClick={() => handleRedirect("/loginDigital?campus=buisness")}
+          onClick={() => handleRedirect("/loginDigital?campus=business")}
         >
-          Campus Buisness
+          Campus Business
         </p>
       </div>
       {showLogo && (

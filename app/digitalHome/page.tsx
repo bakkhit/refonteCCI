@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Header from '../component/digitalHeader/header';
 import VitrineDigital from '../component/vitrineDigital/vitrine';
 import '../globals.css';

@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { supabase } from "../../../supabaseClient";
 
@@ -9,7 +8,6 @@ export default function Rendu() {
 
     useEffect(() => {
         async function fetchRendu() {
-            // 1. Récupère les matières du campus 2 (buisness)
             const { data: matieres } = await supabase
                 .from("matieres")
                 .select("*")
@@ -17,15 +15,13 @@ export default function Rendu() {
 
             if (!matieres || matieres.length === 0) return;
 
-            // 2. Prend la première matière (ou adapte selon ton besoin)
-            const matiereBuisness = matieres[0];
-            setMatiere(matiereBuisness);
+            const matiereBusiness = matieres[0];
+            setMatiere(matiereBusiness);
 
-            // 3. Récupère le rendu le plus récent pour cette matière
             const { data: renduData } = await supabase
                 .from("rendus")
                 .select("*")
-                .eq("id_matieres", matiereBuisness.id)
+                .eq("id_matieres", matiereBusiness.id)
                 .order("Date", { ascending: false })
                 .limit(1)
                 .single();

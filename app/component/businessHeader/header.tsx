@@ -15,7 +15,7 @@ export default function Header() {
                 <div className='flex gap-[8vw] ml-auto mr-[4vw] items-center'>
                     <Link href="/plannings" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">PLANNINGS</Link>
                     <Link href="/notes" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">NOTES</Link>
-                    <Link href="/communication" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">COMMUNICATIONS</Link>
+                    <Link href="/communications" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">COMMUNICATIONS</Link>
                     <Link href="/apprentissage" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">APPRENTISSAGE</Link>
                     <Link href="/profile" className="text-black font-medium text-2xl transition-transform duration-300 hover:scale-120">
                         <Image src="/image/profileIcon.jpg"
@@ -27,7 +27,7 @@ export default function Header() {
                 </div>
             </div>
             <div className='w-[20vw] h-[5vw] bg-white rounded-b-2xl shadow-2xl absolute z-20'>
-                <p className='text-black text-center font-serif-sans font-md text-3xl translate-y-1/2'>Campus Buisness</p>
+                <p className='text-black text-center font-serif-sans font-md text-3xl translate-y-1/2'>Campus Business</p>
             </div>
         </div>
     );
