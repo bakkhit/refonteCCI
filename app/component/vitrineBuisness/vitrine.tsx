@@ -13,7 +13,7 @@ export default function VitrineBuisness() {
           width={100}
           height={100}
           alt="motif"
-          className="absolute -top-[13vw] right-0 w-[50vw] h-fit z-0"
+          className="absolute -top-[13vw] right-0 w-[50vw] h-fit z-0 "
         />
         <Image
           src={"/image/motifBackground.svg"}
